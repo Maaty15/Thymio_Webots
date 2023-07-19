@@ -32,8 +32,8 @@ epsilon = 1.0  # increased exploration rate
 epsilon_min = 0.01
 epsilon_decay = 0.999  # decay epsilon more slowly
 training_episodes = 1000
-batch_size = 16  # batch size for training the model
-memory_size = 5000  # size of the memory for storing experiences
+batch_size = 64  # batch size for training the model
+memory_size = 20000  # size of the memory for storing experiences
 
 # Get the proximities and enable them
 prox = [supervisor.getDevice(f'prox.horizontal.{i}') for i in range(7)]
@@ -219,6 +219,9 @@ for i_episode in range(training_episodes):
     # Decay epsilon
     if epsilon > epsilon_min:
         epsilon *= epsilon_decay
+
+    # Save the model
+    model.save(f'my_model_{i_episode+1}')
      
     initial_translation_field.setSFVec3f(initial_translation)
     initial_rotation_field.setSFRotation(initial_rotation)
