@@ -1,0 +1,85 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Thymio2.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.7000014517488978 0.0003141937619058096 -0.7141413507364741 3.140947533301648
+  position 0.11400349437106197 1.093348594497851 6.057866837728572
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+Wall {
+  translation -0.61 -0.71 0.0499916
+  rotation -1 -1.66574e-06 7.19235e-09 -1.5708053071795867
+  name "wall(9)"
+  size 0.25 0.1 0.04
+}
+Wall {
+  translation -0.52 -0.47 0.0499932
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(8)"
+  size 0.5 0.1 0.04
+}
+Wall {
+  translation 0.65 -6.74634e-14 0.0500011
+  rotation 1 0 0 1.5708
+  name "wall(7)"
+  size 0.7 0.1 0.04
+}
+Wall {
+  translation -0.42 0.13 0.0499966
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(6)"
+  size 0.25 0.1 0.04
+}
+Wall {
+  translation -0.53 0.64 0.0500019
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(5)"
+  size 0.25 0.1 0.04
+}
+Wall {
+  translation -0.5 0.26 0.050001
+  rotation 1 0 0 1.5708
+  name "wall(4)"
+  size 1 0.1 0.04
+}
+Wall {
+  translation 0.5 0.51 0.0500001
+  rotation 1 0 0 1.5708
+  name "wall(3)"
+  size 1 0.1 0.04
+}
+Wall {
+  translation -0.5 0.77 0.0500009
+  rotation 1 0 0 1.5708
+  name "wall(2)"
+  size 1 0.1 0.04
+}
+Wall {
+  translation 0.5 -0.74 0.0499995
+  rotation 1 0 0 1.5708
+  name "wall(1)"
+  size 1 0.1 0.04
+}
+Wall {
+  translation -0.5 -0.22 0.05
+  rotation 1 0 0 1.5708
+  size 1 0.1 0.04
+}
+Thymio2 {
+  translation -0.887969 0.875728 -0.00178029
+  rotation -0.6917200949506946 -0.7014690962889157 -0.17165202356224576 -0.010395307179586588
+  controller "Tymio_RL_Test"
+}

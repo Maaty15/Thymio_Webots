@@ -1,0 +1,58 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Thymio2.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.7176336423282333 -0.0014719277803829861 -0.6964192622460429 3.144445541977533
+  position -0.07687288887307728 0.005320637037692175 2.308979177641062
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.5 1.5
+}
+Wall {
+  translation 0.47 0.63 0.0500013
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(2)"
+  size 0.25 0.1 0.04
+}
+Wall {
+  translation 0.63 -0.09 0.0499969
+  rotation -1 -1.66574e-06 7.19235e-09 -1.5708053071795867
+  name "wall(9)"
+  size 0.25 0.1 0.04
+}
+Wall {
+  translation -0.42 0.13 0.0499966
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  name "wall(6)"
+  size 0.25 0.1 0.04
+}
+Wall {
+  translation -0.25 0.26 0.050001
+  rotation 1 0 0 1.5708
+  name "wall(4)"
+  size 1 0.1 0.04
+}
+Wall {
+  translation -0.25 -0.35 0.0500001
+  rotation 1 0 0 1.5708
+  size 1 0.1 0.04
+}
+DEF Thymio Thymio2 {
+  translation -0.667556 0.626141 -0.00518094
+  rotation -0.6917200949506946 -0.7014690962889157 -0.17165202356224576 -0.010395307179586588
+  controller "Tymio_RL_Test"
+  controllerArgs [
+    ""
+  ]
+}
